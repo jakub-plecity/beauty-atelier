@@ -4562,6 +4562,46 @@ ul {
 }
 
 /*--------------------------------------------------------------
+# Responzivní styl (pro zařízení s šířkou menší než 768px)
+--------------------------------------------------------------*/
+@media screen and (max-width: 768px) {
+  .services-two {
+    padding: 60px 0 70px;
+  }
+
+  .services-two__title {
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 20px;
+  }
+
+  .services-two__list li {
+    flex-direction: column; /* Změna na sloupec pro lepší čitelnost */
+    align-items: flex-start;
+  }
+
+  .services-two__services-name h3 {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .services-two__services-name p {
+    font-size: 12px;
+    line-height: 14px;
+    margin-top: 3px;
+  }
+
+  .services-two__services-price h4 {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .services-two__btn-box {
+    padding-top: 15px;
+  }
+}
+
+/*--------------------------------------------------------------
 # Why Choose One
 --------------------------------------------------------------*/
 .why-choose-one {
@@ -6641,6 +6681,60 @@ ul {
 .thm-breadcrumb li:hover a {
   color: var(--mellis-base);
   opacity: 1;
+}
+
+/*--------------------------------------------------------------
+# Responzivní styl (pro zařízení s šířkou menší než 768px)
+--------------------------------------------------------------*/
+@media screen and (max-width: 768px) {
+  .page-header {
+    padding: 100px 0 150px;
+  }
+
+  .page-header__inner h2 {
+    font-size: 28px;
+    line-height: 36px;
+    margin-top: 10px;
+  }
+
+  .thm-breadcrumb {
+    margin-top: 15px;
+  }
+
+  .thm-breadcrumb li {
+    font-size: 12px;
+    letter-spacing: 0.1em;
+  }
+
+  .thm-breadcrumb li + li {
+    margin-left: 5px;
+  }
+}
+
+/*--------------------------------------------------------------
+# Responzivní styl (pro zařízení s šířkou menší než 480px)
+--------------------------------------------------------------*/
+@media screen and (max-width: 480px) {
+  .page-header {
+    padding: 80px 0 120px;
+  }
+
+  .page-header__inner h2 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .thm-breadcrumb {
+    margin-top: 10px;
+  }
+
+  .thm-breadcrumb li {
+    font-size: 10px;
+  }
+
+  .thm-breadcrumb li + li {
+    margin-left: 3px;
+  }
 }
 
 /*--------------------------------------------------------------
