@@ -7675,8 +7675,13 @@ ul {
   display: block;
 }
 
-.services-details-one__massages-title {
+.services-details-one__massages-title-main {
   font-size: 40px;
+  line-height: 50px;
+}
+
+.services-details-one__massages-title {
+  font-size: 30px;
   line-height: 50px;
 }
 
