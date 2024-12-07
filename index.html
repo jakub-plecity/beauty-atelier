@@ -104,6 +104,18 @@
                 </div>
             </div>
 
+            <script>
+                document.addEventListener('DOMContentLoaded', () => {
+                    const menuToggle = document.getElementById('mobile-nav__toggler');
+                    const menuItems = document.getElementById('main-menu__list');
+
+                    menuToggle.addEventListener('click', () => {
+                        const isHidden = menuItems.style.display === 'none' || !menuItems.style.display;
+                        menuItems.style.display = isHidden ? 'block' : 'none';
+                    });
+                });
+            </script>
+
             <nav class="main-menu">
                 <div class="main-menu__wrapper">
                     <div class="main-menu__wrapper-inner">
@@ -134,9 +146,9 @@
                                 <li class="dropdown">
                                     <a href="services.html">Služby</a>
                                     <ul>
-                                        <li><a href="services.html#control">Kosmetické ošetření</a></li>
-                                        <li><a href="services.html#vacuslim">Vacuslim48</a></li>
-                                        <li><a href="services.html#makeup">Líčení</a></li>
+<!--                                        <li><a href="services.html#control">Kosmetické ošetření</a></li>-->
+<!--                                        <li><a href="services.html#vacuslim">Vacuslim48</a></li>-->
+<!--                                        <li><a href="services.html#makeup">Líčení</a></li>-->
                                         <!--                                        <li><a href="services.html#mikro">Mikrojehličkování</a></li>-->
 <!--                                        <li><a href="massages.html">Massages</a></li>-->
 <!--                                        <li><a href="hydro-therapy.html">Hydro Therapy</a></li>-->
@@ -348,6 +360,49 @@
         </section>
         <!--Welcome One End-->
 
+        <!--Services Setails One Start-->
+        <section class="services-details-one">
+            <div class="container">
+<!--                <div class="section-title text-center">-->
+<!--                    &lt;!&ndash;                    <span class="section-title__tagline">Kosmetické služby ateliéru</span>&ndash;&gt;-->
+<!--                    <h1 class="services-details-one__massages-title-main">O mě</h1>-->
+<!--                </div>-->
+                <div class="services-details-one__massages">
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-6">
+                            <div class="services-details-one__massages-left">
+                                <h3 class="services-details-one__massages-title">O mě</h3>
+                                <p class="services-details-one__massages-text-1">Jmenuji se Julie Korberová a jsem profesionální kosmetička.
+                                    Už více jak 5 let jsem maskérkou ve Východočeském divadle v Pardubicích. Mám za sebou kurzy <b>MAKE-UP Institute</b> Master Beauty & Special Effects
+                                    </br>a kurzy <b>Beauty Akademie</b> laminace obočí a lashlifting a lashbotox řas a v další řadě kurz zeštíhlování komplexním programem <a href="index.html#vacuslim"></a><b>Vacuslim48</b></a>.
+                                    Ráda sleduji aktuální trendy v oblasti módy a kosmetiky a proto spolupracuji s nejprogresivnější a nejmodernější kosmetickou značkou na trhu, Italskou <b>MESMERIE</b>.
+                                    Zakládá si na odborném výzkumu a spolupráci s uznávanými dermatology.
+                                    Budu moc ráda, když Vám budu moci svými službami zpříjemnit den.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6">
+                            <div class="welcome-one__img-box wow slideInRight" data-wow-delay="100ms"
+                                 data-wow-duration="2500ms">
+                                <div class="services-details-one__massages-img">
+                                    <img src="assets/images/resources/logo-3.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Services Setails One End-->
+
+        <!--Brand One Start-->
+        <section class="services-details-one">
+            <div class="container">
+                </br>
+            </div>
+        </section>
+        <!--Brand One End-->
+
         <!--Services One Start-->
         <section class="services-one">
             <div class="container">
@@ -403,7 +458,7 @@
                                         <span class="icon-meditation"></span>
                                     </div>
                                 </div>
-                                <h3 class="services-one__title"><a href="services.html#vacuslim">Vacuslim 48</a></h3>
+                                <h3 class="services-one__title"><a href="index.html#vacuslim">Vacuslim 48</a></h3>
 <!--                                <p class="services-one__text">Vysoce účinné ošetření bojující proti stárnutí kůže-->
 <!--                                    a současně redukce již vzniklých vrásek. Ošetření obsahuje mořský kolagen a prekurzor kolagenu.</p>-->
 <!--                                <div class="services-one__btn-box">-->
@@ -460,14 +515,6 @@
 <!--                                <span class="section-title__tagline">Služby</span>-->
                                 <h2 class="section-title__title">Přijdťe vyzkoušet některé z mých nabízených procedůr.</h2>
                             </div>
-<!--                            <div class="video-one__video-link">-->
-<!--                                <a href="https://www.youtube.com/watch?v=Get7rqXYrbQ" class="video-popup">-->
-<!--                                    <div class="video-one__video-icon">-->
-<!--                                        <span class="fa fa-play"></span>-->
-<!--                                        <i class="ripple"></i>-->
-<!--                                    </div>-->
-<!--                                </a>-->
-<!--                            </div>-->
                         </div>
                     </div>
                     <div class="col-xl-6 col-lg-6">
@@ -563,7 +610,7 @@
                                     <div class="icon">
                                         <span class="fa fa-check"></span>
                                     </div>
-                                    <a href="services.html#all-services"><p class="text">Ostatní kosmetické služby</p>
+                                    <a href="services.html#all-services"><p class="text">Ostatní kosmetické služby</p></a>
                                 </li>
                             </ul>
                         </div>
@@ -572,6 +619,230 @@
             </div>
         </section>
         <!--Video One End-->
+
+        <!--Services Setails One Start-->
+        <section id="vacuslim" class="services-details-one">
+            <div class="container">
+                <div class="section-title text-center">
+                    <!--                    <span class="section-title__tagline">Kosmetické služby ateliéru</span>-->
+                    <h1 class="services-details-one__massages-title-main">Vacuslim 48</h1>
+                </div>
+                <div class="services-details-one__massages">
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-6">
+                            <div class="services-details-one__massages-left">
+                                <h3 class="services-details-one__massages-title">Co je ošetření Vacuslim 48</h3>
+                                <p class="services-details-one__massages-text-1">Komplexní program pro odstranění tukových
+                                    usazenin, tvarování těla, zpevnění pokožky a odstranění celulitidy. To vše pomocí patentované technologie používané pouze
+                                    profesionály v oblasti estetiky s patentovaným carboxy účinkem.</p>
+                                <p class="services-details-one__massages-text-3">Pruceduru Vacuslim 48 lze rychle a snadno aplikovat, a to vždy, když je to nutné ke zlepšení vzhledu těla.
+                                    Proceduru Vacuslim 48 lze použít jako samostatnou léčbu nebo ji lze použít jako doplňkovou léčbu k dosažení rychlejších a
+                                    lepších výsledků při léčbě celulitidy a hubnutí pomocí kosmetických prostředků, kavitaci, rádiové vlny, elektrostimulaci,
+                                    terapii madero a manuální anticelulitidní masáže. Při proceduře Vacuslim 48 Vám na tělo naneseme přípravky s aktivními složkami podporující nejen hubnutí.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-6 col-lg-6">
+                            <div class="services-details-one__massages-right">
+                                <div class="services-details-one__massages-img">
+                                    <img src="assets/images/resources/vacuslim-2.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="services-details-one__benefits">
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-6">
+                            <div class="services-details-one__benefits-left">
+                                <div class="services-details-one__benefits-img">
+                                    <img src="assets/images/resources/vacuslim-1.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6">
+                            <div class="services-details-one__benefits-right">
+                                <h3 class="services-details-one__massages-title">Proč Vacuslim 48</h3>
+                                <p class="services-details-one__benefits-text">Neinvazní, bezbolestná, estetická péče s prokazatelnými výsledky hned po prvním ošetření. Jedná se o naprosto nadčasovou technologii, kterou ve světě využívají špičkové kliniky a medical centra. Díky nové metodě Vacuslim 48,
+                                    která využívá vakuové balení, je dosaženo hlubokého a rychlého pronikání účinných látek z přípravků, které stimulují přirozené funkce těla.</p>
+                                <ul class="services-details-one__benefits-points list-unstyled">
+                                    <li>
+                                        <div class="icon">
+                                            <span class="fa fa-check"></span>
+                                        </div>
+                                        <div class="text">
+                                            <p>Viditelné výsledky po prvním ošetření</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="icon">
+                                            <span class="fa fa-check"></span>
+                                        </div>
+                                        <div class="text">
+                                            <p>Zrychlení činnosti lymfatického systému</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="icon">
+                                            <span class="fa fa-check"></span>
+                                        </div>
+                                        <div class="text">
+                                            <p>Efektivní komplexní detoxikace těla</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="icon">
+                                            <span class="fa fa-check"></span>
+                                        </div>
+                                        <div class="text">
+                                            <p>Zabránění vzniku celulitidy</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="icon">
+                                            <span class="fa fa-check"></span>
+                                        </div>
+                                        <div class="text">
+                                            <p>Pevnější a hladší pokožka</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <p class="services-details-one__benefits-text"> Ukázka procedury</p>
+                            <a href="assets/media/Vacuslim_48_beautykoncept.mp4" class="video-popup">
+                                <div class="video-one__video-icon">
+                                    <span class="fa fa-play"></span>
+                                    <i class="ripple"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Services Setails One End-->
+
+        <!--Client Stories Start-->
+        <section class="client-stories">
+            <div class="container">
+                <div class="row">
+                    <div class="section-title text-center">
+                        <!--                    <span class="section-title__tagline">Kosmetické služby ateliéru</span>-->
+                        <h1 class="services-details-one__massages-title-main">Aktivní složky</h1>
+                    </div>
+                    <!--Client Stories Single Start-->
+                    <div class="col-xl-6 col-lg-6 col-md-6">
+                        <div class="client-stories__single">
+                            <div class="client-stories__inner">
+                                <div class="client-stories__name-and-date">
+                                    <h3 class="client-stories__name">SymFit</h3>
+                                </div>
+                                <p class="client-stories__text">Revoluční přísada do programů proti celulitidě. Snižuje tvorbu a množení tukových buněk (adipogeneze). Snižuje a zabraňuje růstu tukové tkáně (lipogeneze).
+                                    Zlepšuje spalování tuků a čištění těla. Snižuje viditelné známky celulitidy.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Client Stories Single End-->
+                    <!--Client Stories Single Start-->
+                    <div class="col-xl-6 col-lg-6 col-md-6">
+                        <div class="client-stories__single">
+                            <div class="client-stories__inner">
+                                <div class="client-stories__name-and-date">
+                                    <h3 class="client-stories__name">L-karnitin</h3>
+                                </div>
+                                <p class="client-stories__text">Urychluje spalování mastných kyselin, podporuje transport tuku do mitochondrií,
+                                    kde se tuk přeměňuje na energii.
+                                    <br/><br/><br/>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Client Stories Single End-->
+                    <!--Client Stories Single Start-->
+                    <div class="col-xl-6 col-lg-6 col-md-6">
+                        <div class="client-stories__single">
+                            <div class="client-stories__inner">
+                                <div class="client-stories__name-and-date">
+                                    <h3 class="client-stories__name">Kofein</h3>
+                                </div>
+                                <p class="client-stories__text">Posiluje pokožku a zlepšuje pomerančovou kůru.
+                                    <br/><br/><br/>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Client Stories Single End-->
+                    <!--Client Stories Single Start-->
+                    <div class="col-xl-6 col-lg-6 col-md-6">
+                        <div class="client-stories__single">
+                            <div class="client-stories__inner">
+                                <div class="client-stories__name-and-date">
+                                    <h3 class="client-stories__name">Thermolate</h3>
+                                </div>
+                                <p class="client-stories__text">Efekt inteligentního oteplování zrychluje buněčný metabolismus a způsobuje příjemný pocit tepla na těle. Tento pocit tepla může trvat od 30 minut do 2 hodin.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Client Stories Single End-->
+                    <!--Client Stories Single Start-->
+                    <div class="col-xl-6 col-lg-6 col-md-6">
+                        <div class="client-stories__single">
+                            <div class="client-stories__inner">
+                                <div class="client-stories__name-and-date">
+                                    <h3 class="client-stories__name">Extrakt z divokého kaštanu</h3>
+                                </div>
+                                <p class="client-stories__text">Escin, který je hlavní složkou divokého kaštanu, zmírňuje příznaky unavených a napjatých nohou a snižuje otoky.
+                                    Escin z divokého kaštanu je přírodní složka, která vylučuje přebytečnou tekutinu.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Client Stories Single End-->
+                    <!--Client Stories Single Start-->
+                    <div class="col-xl-6 col-lg-6 col-md-6">
+                        <div class="client-stories__single">
+                            <div class="client-stories__inner">
+                                <div class="client-stories__name-and-date">
+                                    <h3 class="client-stories__name">Extrakt z břečťanu</h3>
+                                </div>
+                                <p class="client-stories__text">Obsahuje látky, které účinně bojují proti celulitidě a zmírňují vzhled pokožky pomerančové kůry.
+                                    <br/><br/><br/>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Client Stories Single End-->
+                    <!--Client Stories Single Start-->
+                    <div class="col-xl-6 col-lg-6 col-md-6">
+                        <div class="client-stories__single">
+                            <div class="client-stories__inner">
+                                <div class="client-stories__name-and-date">
+                                    <h3 class="client-stories__name">Extrakt z řas</h3>
+                                </div>
+                                <p class="client-stories__text">Intenzivně hydratuje a osvěžuje pokožku.
+                                    <br/><br/><br/><br/><br/><br/>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Client Stories Single End-->
+                    <!--Client Stories Single Start-->
+                    <div class="col-xl-6 col-lg-6 col-md-6">
+                        <div class="client-stories__single">
+                            <div class="client-stories__inner">
+                                <div class="client-stories__name-and-date">
+                                    <h3 class="client-stories__name">Komplex éterických olejů</h3>
+                                </div>
+                                <p class="client-stories__text">Séra používaná k péči o tělo během metody Vacuslim 48 obsahují komplex éterických olejů z citronu,
+                                    pomeranče a rozmarýnu, zatímco krémy obsahují komplex éterických olejů z máty,
+                                    levandule a citronu. Komplex těchto éterických olejů osvěžuje a přispívá k jejímu lepšímu vzhledu.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Client Stories Single End-->
+                </div>
+            </div>
+        </section>
+        <!--Client Stories End-->
 
         <!--Counter One Start-->
 <!--        <section class="counter-one">-->
@@ -1311,7 +1582,6 @@
     <!-- /.search-popup -->
 
     <a href="#" data-target="html" class="scroll-to-target scroll-to-top"><i class="fa fa-angle-up"></i></a>
-
 
     <script src="assets/vendors/jquery/jquery-3.6.0.min.js"></script>
     <script src="assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
